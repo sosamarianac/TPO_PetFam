@@ -1,0 +1,140 @@
+:root {
+    --celeste: #8B9FD2;
+    --celeste2: #B2D1E7;
+    --azul: #055895;
+    --violeta: #A85A93;
+    --blanco: #fff;
+    --gris: #F4F4F4;
+    --fondo: #f8f9fa;;
+    --verde: #66C59B;
+    --fucsia: #DF225F;
+    --mostaza: #F9C24B;
+    --negro: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* Inicio Estilos de la barra de navegacion */
+header {
+    height: 12%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 50px;
+    box-shadow: 0 8px 30px rgba(0,0,0, 0.2);
+    background: var(--blanco);
+    position: fixed;
+    width: 100%;
+}
+.logo {
+    width: 40%;
+    height: 88%;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 100px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar i {
+    font-size: 3rem;
+    display: none;
+}
+#toggle-menu {
+    display: none;
+}
+
+.navbar-link {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+    .navbar ul {
+        background-color: white;
+        width: 100%;
+        height: calc(100vh - 80px);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    .navbar i {
+        display: block;
+    }
+
+    #toggle-menu:checked ~ .navbar-list {
+        display: flex;
+    }
+}
+/* Fin del Nav */
+/* Inicio de Estilos para el Main */
+main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+.cont-sect {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    
+}
+.intro {
+    width: 100%;
+    height: 60%;
+
+}
+.intro-text {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.intro-text h3 {
+    width: 50%;
+    color: var(--azul);
+    text-align: center;
+}
+.intro-text p {
+    width: 50%;
+    line-height: 2.5vw; /*incluir en la media query ajuste de altura de linea*/
+    font-size: 1rem;
+    text-align: center;
+}
+.intro-text img {
+    width: auto;
+    height: 20%;
+}
+.video {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    margin-top: 5.3%;
+    
+}
