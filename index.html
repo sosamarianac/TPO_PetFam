@@ -10,7 +10,12 @@
     <link rel="shortcut icon"
         href="./Assets/kisspng-cat-dog-parrot-pet-sitting-pet-hospital-5ae8d9ffc83b51.7513710315252095998202.png"
         type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,20 +24,26 @@
     <header>
         <!-- Logo -->
 
-        <nav>
-            <div class="navbar-logo">
-              <a href="#"><img src="./Assets/Logo.png" alt="Logo" width="70px"></a>
-            </div>
-            
-            <ul class="navbar-menu">
-              <li><a href="#">Adoptar</a></li>
-              <li><a href="#">Donar</a></li>
-              <li><a href="#">Misión</a></li>
-              
-            </ul>
-          </nav>
+        <nav class="navbar">
 
-        
+
+            <div class="navbar-logo">
+                <a href="#"><img src="./Assets/Logo.png" alt="Logo" width="70px"></a>
+            </div>
+
+            <ul class="navbar-menu">
+                <li><a href="#">Adoptar</a></li>
+                <li><a href="#">Donar</a></li>
+                <li><a href="#">Misión</a></li>
+
+            </ul>
+            
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+
     </header>
     <!-- Fin del Header -->
 
@@ -42,14 +53,14 @@
         <!-- Section introductorio a la web con video probable inclusión de animación -->
         <section class="intro">
             <div class="video">
-            <video
+                <video
                     src="https://res.cloudinary.com/dejpxz0ck/video/upload/ac_none,q_auto/v1602953897/ezgif.com-resize_wyx4cf.mp4?raw=true"
                     autoplay="" muted="" loop="" class="video"></video>
 
             </div>
 
             <div class="form--adoptame">
-                
+
 
                 <br>
                 <form action="" method="POST" id="form">
@@ -60,20 +71,15 @@
                     <label for="email">Correo electrónico:</label>
                     <input type="email" id="email" name="email" required>
 
-                    <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="password" required>
-
                     <input type="submit" value="Enviar">
                 </form>
 
                 <script src="./js/form-validation.js"></script>
             </div>
+
             
-<!-- 
-            
-                <p>¡Te acompañamos en esta nueva etapa! Conocé un poco más
-                    sobre la adopción de perros y la adopción de gatos.</p>  -->
-            <!-- <img src="/Assets/adopciones.png" alt="Animate a Adoptar"> -->
+
+          
 
 
         </section>
@@ -90,7 +96,7 @@
             <h3>seccion donar</h3>
 
         </section>
-        
+
 
         <form action="">
 
@@ -104,7 +110,9 @@
 
     <!-- Inicio del Foorter -->
     <footer>
-        <section class="footer-1"><h3>Mas contenido:</h3></section>
+        <section class="footer-1">
+            <h3>Mas contenido:</h3>
+        </section>
         <section class="footer-icons-container">
             <div class="icons">
                 <a href="#" id="icon-face"><img src="./assets/icons/facebook.png" alt="facebook-logo"></a>

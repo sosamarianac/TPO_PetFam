@@ -17,15 +17,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+    
 }
 
 img {
     max-height: 100%;
+}
+
+li {
+    list-style: none;
+    
+}
+a {
+    text-decoration: none;
 }
 
 body {
@@ -38,25 +47,30 @@ body {
 
 /* Inicio Estilos de la barra de navegacion */
 header {
-    
+    position: relative;
     grid-area: header;
-    width: 100%;
-    height: auto;
+    padding: 0 2rem;
 }
 
 nav {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin : 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+
+        
     
-    padding: 10px;
   }
   
   
   
   .navbar-menu {
     display: flex;
-    list-style: none;
+    
+    
     
   }
   
@@ -64,16 +78,85 @@ nav {
     margin-left: 20px;
   }
   
-  .navbar-menu li:first-child {
-    margin-left: 0;
-  }
+  
   
   .navbar-menu a {
     color: var(--azul);
    
     text-decoration: none;
   }
-  
+
+  .navbar-menu a:hover  {
+    color: yellowgreen;
+    font-size: 1.1rem;
+  }
+
+  .navbar .toggle-btn {
+    cursor: pointer;
+    
+    /* ocultar menu hamburguesa */
+    display: none; 
+    
+  }
+
+
+
+  @media (max-width: 600px){ 
+    .navbar-menu {
+        display: none;
+    }
+    .navbar .toggle-btn {
+        display: block;
+        font-size: 3rem;
+    }
+
+    main .intro {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr) ; 
+            
+    }
+    main .video {
+        grid-row: 1;
+    }
+    main .form--adoptame {
+        grid-row: 2;
+        margin-left: 90px;
+    }
+    .menu-desplegable {
+        display: none;
+        height: 0;
+        position: absolute;
+        right: 2rem;
+        top: 6rem;
+        width: 200px;
+        background-color: rgba(12, 106, 160, 0.534);
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        
+    }
+.menu-desplegable.open{
+    height: 150px;
+}
+
+    .menu-desplegable li {
+        padding:10px;
+        text-align: center;
+        justify-items: center;
+        
+    }
+    .menu-desplegable li a {
+        color: var(--blanco);
+    }
+
+    .menu-desplegable {
+        display: block;
+    }
+
+    
+    
+  }
 
 
 
@@ -123,26 +206,42 @@ main .intro form {
     
     margin-bottom: 0.5rem;
     font-weight: normal;
-    margin: 0 auto;
+    margin: 10px auto;
 
 }
 .form--adoptame h3 {
     color: var(--blanco);
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .form--adoptame input[type="text"],
 input[type="email"],
-input[type="tel"],
-input[type="file"],
-input[type="date"],
-input[type="password"] {
+input[type="tel"]
+ {
     padding: 0.5rem;
     margin-bottom: 1rem;
     border-radius: 3px;
     
     font-size: 1rem;
+}
+input[type="submit"],
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover button:hover {
+    background-color: #0056b3;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(19, 22, 20, 0.5);
+    cursor: pointer;
 }
 footer {
     margin-top: 20px;
