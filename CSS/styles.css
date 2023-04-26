@@ -38,6 +38,7 @@ a {
     text-decoration: none;
 }
 
+
 body {
     display: grid;
     grid-template-areas:
@@ -52,11 +53,14 @@ header {
     grid-area: header;
     padding: 0 2rem;
 }
+.navbar-logo {
+    height: 80px;
+}
 
 nav {
     width: 100%;
-    height: 60px;
-    max-width: 1200px;
+    height: 100px;
+    
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -82,6 +86,7 @@ nav {
 
 
 .navbar-menu a {
+    font-size: 1.5rem;
     color: var(--azul);
 
     text-decoration: none;
@@ -89,7 +94,7 @@ nav {
 
 .navbar-menu a:hover {
     color: yellowgreen;
-    font-size: 1.1rem;
+    font-size: 1.8rem;
 }
 
 .navbar .toggle-btn {
@@ -130,14 +135,14 @@ nav {
 
     main .video {
         grid-row: 1;
-        height: 170px;
+        height: 250px;
         
         
     }
 
     main .form--adoptame {
         grid-row: 2;
-        margin-left: 90px;
+        justify-self: center;
     }
 
     
@@ -155,12 +160,12 @@ main {
 main .intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    
 }
 
 main .intro video {
     margin: 20px auto 20px 20px;
-    max-width: 400px;
+    max-width: 600px;
     border-radius: 20px;
 }
 
@@ -171,11 +176,12 @@ main .intro form {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: var(--celeste);
-    min-width: 100px;
-    width: 200px;
-
+    min-width: 200px;
+    width: 350px;
+    height: 300px;
     display: flex;
     flex-direction: column;
+    margin: 20px auto;
 }
 
 .form--adoptame {
@@ -222,7 +228,9 @@ input[type="submit"]:hover button:hover {
 }
 
 main .titulo-adop{
+    
     text-align: center;
+    
     margin-top: 40px;
     
     font-size: 2rem;
@@ -234,8 +242,8 @@ main .titulo-adop{
 main .adopt {
     
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
-    margin: 20px 20px 20px 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    
     gap: 10px;
     align-items: center;
 
@@ -250,8 +258,8 @@ main .adopt img {
 .card {
     position: relative;    
     
-    width: 150px;
-    height: 200px;
+    width: 200px;
+    height: 250px;
     margin-top: 10px;
 }
 
