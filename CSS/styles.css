@@ -254,12 +254,18 @@ main .adopt {
     grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
     margin: 20px 20px 20px 20px;
     gap: 10px;
+    align-items: center;
 }
 
 main .adopt img {
     width: 100%;
     display: block;
     box-shadow: -10px 0px 0px rbga(0,0,0.6);
+}
+.card {
+        
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
 }
 
 footer {
