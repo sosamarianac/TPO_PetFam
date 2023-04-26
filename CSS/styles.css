@@ -87,7 +87,7 @@ nav {
 
 
 .navbar-menu a {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--azul);
 
     text-decoration: none;
@@ -95,7 +95,7 @@ nav {
 
 .navbar-menu a:hover {
     color: yellowgreen;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
 }
 
 .navbar .toggle-btn {
@@ -199,15 +199,15 @@ main .intro form {
     background-color: var(--celeste);
     min-width: 200px;
     width: 350px;
-    height: 300px;
+    height: 320px;
     display: flex;
     flex-direction: column;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .form--adoptame {
 
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
     font-weight: normal;
     margin: 10px auto;
 
@@ -225,10 +225,10 @@ main .intro form {
 input[type="email"],
 input[type="tel"] {
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     border-radius: 5px;
 
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .form--adoptame label {
@@ -248,7 +248,8 @@ button {
     font-size: 1.2rem;
     cursor: pointer;
     width: 100px;
-    margin: 15px auto;
+    height: 35px;
+    margin:auto;
 }
 
 input[type="submit"]:hover,
@@ -386,37 +387,45 @@ footer {
     color: aliceblue;
     grid-area: footer;
     width: 100%;
-    height: auto;
+    height: 140px;
 
     display: flexbox;
+    align-items: center;
 
 }
 
 .footer-1 {
     color: var(--azul);
     text-align: center;
+    font-size: 3rem;
 
 }
 
 footer .footer-icons-container {
     width: 100%;
-    height: 30px;
+    height: 60px;
     display: grid;
-    align-content: center;
-    justify-content: left;
+    align-content: start;
+    justify-content: right;
+    
 
 
 
 }
+.footer-icons-container .icons {
 
+    
+    margin-right: 50px;
+}
 .footer-icons-container .icons a {
 
     max-width: max-content;
-    margin-left: 20px;
+    margin-left: 60px;
 }
 
 .footer-icons-container .icons a img {
-    max-width: 20px;
+    margin-top: 20px;
+    max-width: 40px;
     transition: transform 0.2s ease-in-out;
 }
 
