@@ -128,15 +128,20 @@ nav {
 
 
     main .intro {
-        display: flex;
+        display: grid;
+        width: 400px;
+        justify-items: center;
         
+
         
+
+
 
     }
 
     main .video {
         grid-row: 1;
-        max-height: 190px;
+        max-height: 220px;
         min-height: 180px;
 
 
@@ -146,6 +151,8 @@ nav {
 
         margin: 10px;
         grid-row: 2;
+        margin-top: 20px;
+        margin-left: 20px;
 
 
     }
@@ -153,15 +160,19 @@ nav {
     main .form--adoptame h3 {
         font-size: 1.5rem;
     }
+    .adopt {
+       
+        justify-items: center;
+    }
+
     .card {
         position: relative;
         justify-self: center;
-        width: 200px;
-        height: 300px;
+        
         margin-top: 10px;
     }
 
-    
+
 
 
 
@@ -249,7 +260,7 @@ button {
     cursor: pointer;
     width: 100px;
     height: 35px;
-    margin:auto;
+    margin: auto;
 }
 
 input[type="submit"]:hover,
@@ -407,16 +418,18 @@ footer .footer-icons-container {
     display: grid;
     align-content: start;
     justify-content: right;
-    
+
 
 
 
 }
+
 .footer-icons-container .icons {
 
-    
+
     margin-right: 50px;
 }
+
 .footer-icons-container .icons a {
 
     max-width: max-content;
