@@ -159,11 +159,10 @@ nav {
 
     main .form--adoptame h3 {
         font-size: 1.5rem;
+        
     }
-    .adopt {
-       
-        justify-items: center;
-    }
+    
+    
 
     .card {
         position: relative;
@@ -274,11 +273,16 @@ button:hover {
 main .titulo-adop {
 
     text-align: center;
+    color: var(--azul);
+    transition: transform 2s ease-in-out;
 
     margin-top: 40px;
 
-    font-size: 2rem;
+    font-size: 3rem;
 
+}
+main .titulo-adop:hover {
+    transform:rotateY(360deg);
 }
 
 /* galeria responsiva solo con grid */
@@ -287,6 +291,7 @@ main .adopt {
 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    
 
     gap: 10px;
     align-items: center;
