@@ -210,6 +210,7 @@ main {
 
 
 main .intro {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -294,7 +295,7 @@ button:hover {
 /* inicio seccion adopt */
 
 main .adopt {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 main .titulo-adop {
@@ -435,7 +436,7 @@ main .donar {
 /* inicio seccion nosotros */
 .nosotros {
     grid-area: nosotros;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -443,12 +444,20 @@ main .donar {
 
 
 }
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
 
 .nosotros .card {
+    
     box-shadow: 5px 5px 20px var(--azul);
     border-radius: 20px;    
-    width: 350px;  
+    width: 300px;
+    height: 350px;  
 }
+
 .nosotros .card::before {
     content: "";
     position: absolute;
@@ -509,7 +518,7 @@ main .donar {
 
 }
 .nosotros .icons a:hover {
-    opacity: 1;  
+    filter: invert(1)  
 
 }
 
@@ -529,8 +538,11 @@ main .donar {
 }
 
 .nosotros .btn {
-    margin-top: 10px;
+    margin-top: 20px;
+    display: flex;    
+    justify-content: space-around;    
 }
+
 
 
 
