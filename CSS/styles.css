@@ -44,6 +44,8 @@ body {
     grid-template-areas:
         "header header header"
         "main main main"
+        "donar donar donar"
+        "nosotros nosotros nosotros"
         "footer footer footer";
 }
 
@@ -105,6 +107,7 @@ nav {
     display: none;
 
 }
+
 
 
 
@@ -171,6 +174,23 @@ nav {
         margin-top: 10px;
     }
 
+    main .nosotros {
+
+        margin: 10px;
+        grid-row: 3;
+        margin-top: 20px;
+        margin-left: 20px;
+        
+    }
+    main .nosotros .container {
+        width: 250px;
+    }
+    main .nosotros .card {
+        width: 250px;
+    }
+
+
+
 
 
 
@@ -187,6 +207,7 @@ main {
     flex-direction: column;
     margin: 10px auto;
 }
+
 
 main .intro {
     display: grid;
@@ -270,6 +291,12 @@ button:hover {
     cursor: pointer;
 }
 
+/* inicio seccion adopt */
+
+main .adopt {
+    height: 100vh;
+}
+
 main .titulo-adop {
 
     text-align: center;
@@ -288,7 +315,7 @@ main .titulo-adop:hover {
 /* galeria responsiva solo con grid */
 
 main .adopt {
-
+    
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     
@@ -394,10 +421,129 @@ main .adopt img {
     transform: perspective(600px) rotateY(360deg);
 }
 
+/* inicio seccion donar */
+main .donar {
+    grid-area: donar;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+/* fin seccion donar */
+
+/* inicio seccion nosotros */
+.nosotros {
+    grid-area: nosotros;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+
+
+}
+
+.nosotros .card {
+    box-shadow: 5px 5px 20px var(--azul);
+    border-radius: 20px;    
+    width: 350px;  
+}
+.nosotros .card::before {
+    content: "";
+    position: absolute;
+    height: 45%;
+    width: 100%;
+    background: var(--azul);
+    border-radius: 20px 20px 0 0;
+
+
+}
+.nosotros .card-content {
+    position: relative;
+    z-index: 100;
+    display: flex;    
+    flex-direction: column;    
+    text-align: center;
+    position: relative;
+    
+
+}
+
+.nosotros .card .image {
+    
+    margin: 50px auto 25px;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: var(--fucsia);
+    box-shadow: 5px 5px 20px black;
+    
+
+}
+
+.nosotros .card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--blanco);
+}
+
+
+.nosotros .icons {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    height: 25px;
+    
+
+    
+}
+.nosotros .icons a {
+    margin: 5px ;
+    opacity: 0.6;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+.nosotros .icons a:hover {
+    opacity: 1;  
+
+}
+
+.nosotros .card .nombre-profesion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nosotros .card .nombre {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.nosotros .card .profesion {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.nosotros .btn {
+    margin-top: 10px;
+}
 
 
 
 
+
+
+
+
+
+
+/* fin seccion nosotros */
+
+/* inicio Footer */
 footer {
     margin-top: 20px;
     color: aliceblue;
@@ -450,3 +596,5 @@ footer .footer-icons-container {
 .footer-icons-container .icons a img:hover {
     transform: rotate(360deg);
 }
+
+/* fin footer */
