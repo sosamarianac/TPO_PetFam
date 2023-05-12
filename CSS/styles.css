@@ -183,7 +183,9 @@ nav {
         width: 250px;
     }
 
-
+    .popup-inner {
+        width: 80%;
+    }
 
 
 
@@ -574,7 +576,7 @@ main .donar {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    width: 80%;
+    width: 50%;
     max-height: 80%;
     overflow-y: scroll;
 
