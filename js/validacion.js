@@ -1,4 +1,6 @@
 const form = document.querySelector('form');
+const slider = document.querySelector('.nosotros');
+
 
 form.addEventListener('submit', function(event) {
   // previene que la página se recargue cuando se envía el formulario
@@ -32,3 +34,87 @@ form.addEventListener('submit', function(event) {
   alert('El formulario se ha enviado correctamente.');
   form.submit();
 });
+
+//seccion scroll perfil
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+});
+
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+});
+
+slider.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 2; // Se puede ajustar la velocidad
+  slider.scrollLeft = scrollLeft - walk;
+});
+
+
+// seccion pop-up fotos nuestras mascotas
+
+//perfil-1
+const miMascotaBtn1 = document.getElementById('mi-mascota-perfil1');
+const popup1 = document.getElementById('popup-perfil1');
+const popupCloseBtn1 = document.getElementById('popup-close-perfil1');
+
+miMascotaBtn1.addEventListener('click', () => {
+    popup1.style.display = 'block';
+});
+
+popupCloseBtn1.addEventListener('click', () => {
+    popup1.style.display = 'none';
+});
+// Perfil-2
+const miMascotaBtn2 = document.getElementById('mi-mascota-perfil2');
+const popup2 = document.getElementById('popup-perfil2');
+const popupCloseBtn2 = document.getElementById('popup-close-perfil2');
+
+miMascotaBtn2.addEventListener('click', () => {
+    popup2.style.display = 'block';
+});
+
+popupCloseBtn2.addEventListener('click', () => {
+    popup2.style.display = 'none';
+});
+
+// Perfil-3
+const miMascotaBtn3 = document.getElementById('mi-mascota-perfil3');
+const popup3 = document.getElementById('popup-perfil3');
+const popupCloseBtn3 = document.getElementById('popup-close-perfil3');
+
+miMascotaBtn3.addEventListener('click', () => {
+    popup3.style.display = 'block';
+});
+
+popupCloseBtn3.addEventListener('click', () => {
+    popup3.style.display = 'none';
+});
+
+//perfil-4
+const miMascotaBtn4 = document.getElementById('mi-mascota-perfil4');
+const popup4 = document.getElementById('popup-perfil4');
+const popupCloseBtn4 = document.getElementById('popup-close-perfil4');
+
+miMascotaBtn4.addEventListener('click', () => {
+    popup4.style.display = 'block';
+});
+
+popupCloseBtn4.addEventListener('click', () => {
+    popup4.style.display = 'none';
+});
+
+

@@ -134,9 +134,9 @@ nav {
         display: grid;
         width: 400px;
         justify-items: center;
-        
 
-        
+
+
 
 
 
@@ -162,15 +162,15 @@ nav {
 
     main .form--adoptame h3 {
         font-size: 1.5rem;
-        
+
     }
-    
-    
+
+
 
     .card {
         position: relative;
         justify-self: center;
-        
+
         margin-top: 10px;
     }
 
@@ -180,11 +180,13 @@ nav {
         grid-row: 3;
         margin-top: 20px;
         margin-left: 20px;
-        
+
     }
+
     main .nosotros .container {
         width: 250px;
     }
+
     main .nosotros .card {
         width: 250px;
     }
@@ -309,17 +311,18 @@ main .titulo-adop {
     font-size: 3rem;
 
 }
+
 main .titulo-adop:hover {
-    transform:rotateY(360deg);
+    transform: rotateY(360deg);
 }
 
 /* galeria responsiva solo con grid */
 
 main .adopt {
-    
+
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    
+
 
     gap: 10px;
     align-items: center;
@@ -431,6 +434,7 @@ main .donar {
     justify-content: center;
 
 }
+
 /* fin seccion donar */
 
 /* inicio seccion nosotros */
@@ -440,22 +444,27 @@ main .donar {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    
+
 
 
 }
+
 .content {
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 50px;
+    min-height: 400px;
+    overflow-x: hidden;
+
 }
 
 .nosotros .card {
-    
+    margin-top: 20px;
     box-shadow: 5px 5px 20px var(--azul);
-    border-radius: 20px;    
-    width: 300px;
-    height: 350px;  
+    border-radius: 20px;
+    min-width: 240px;
+    height: 350px;
+
 }
 
 .nosotros .card::before {
@@ -468,19 +477,20 @@ main .donar {
 
 
 }
+
 .nosotros .card-content {
     position: relative;
     z-index: 100;
-    display: flex;    
-    flex-direction: column;    
+    display: flex;
+    flex-direction: column;
     text-align: center;
     position: relative;
-    
+
 
 }
 
 .nosotros .card .image {
-    
+
     margin: 50px auto 25px;
     height: 140px;
     width: 140px;
@@ -488,7 +498,7 @@ main .donar {
     padding: 3px;
     background: var(--fucsia);
     box-shadow: 5px 5px 20px black;
-    
+
 
 }
 
@@ -506,20 +516,21 @@ main .donar {
     right: 5px;
     top: 10px;
     height: 25px;
-    
 
-    
+
+
 }
+
 .nosotros .icons a {
-    margin: 5px ;
+    margin: 5px;
     opacity: 0.6;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 
 }
-.nosotros .icons a:hover {
-    filter: invert(1)  
 
+.nosotros .icons a:hover {
+    filter: invert(1)
 }
 
 .nosotros .card .nombre-profesion {
@@ -532,6 +543,7 @@ main .donar {
     font-size: 1.5rem;
     font-weight: 600;
 }
+
 .nosotros .card .profesion {
     font-size: 1rem;
     font-weight: 400;
@@ -539,21 +551,109 @@ main .donar {
 
 .nosotros .btn {
     margin-top: 20px;
-    display: flex;    
-    justify-content: space-around;    
+    display: flex;
+    justify-content: space-around;
 }
 
 
 
+/* slider de las tarjetas */
+
+.nosotros {
+
+    max-width: 1270px;
+    overflow-x: hidden;
+    white-space: nowrap;
+
+}
+
+.nosotros .content {
+    display: inline-block;
+    width: auto;
+    margin-left: 500px;
+}
+
+.nosotros .card {
+    display: inline-block;
+    width: 300px;
+    margin-right: 100px;
+    vertical-align: top;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
 
 
+}
 
-
-
-
-
+.nosotros .card-content {
+    padding: 20px;
+}
 
 /* fin seccion nosotros */
+
+
+/* seccion foto nuestras mascotas */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.popup-close {
+    position: absolute;
+    right: 10px;
+}
+
+.popup-content {
+    display: grid;
+    /* Establecer el contenedor como una cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+    /* Establecer columnas para adaptarse al ancho de la pantalla */
+    grid-gap: 20px;
+    /* Espacio entre imágenes */
+    justify-items: center;
+    padding: 20px;
+    
+}
+
+.popup-content img {
+
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(19, 22, 20, 0.5);
+    width: 180px;
+    /* Ancho de imagen al 100% del contenedor */
+    height: auto;
+    /* Ajuste automático de altura para mantener la relación de aspecto */
+
+}
+
+
+/* fin seccion nuestras mascotas */
 
 /* inicio Footer */
 footer {
