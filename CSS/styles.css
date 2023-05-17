@@ -637,7 +637,7 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: var(--azul);
-    padding: 10px;
+    padding: 10px 0px;
     box-shadow: 2px -2px 29px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 2px -2px 29px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px -2px 29px 0px rgba(0,0,0,0.75);
@@ -647,13 +647,13 @@ footer {
 .footer-1 {
     color: var(--azul);
     text-align: center;
-    font-size: 3rem;
+    font-size: 1rem;
 
 }
 .footer-1 p {
     color: var(--blanco);
     text-align: center; 
-    padding: 10px;
+    padding: 10px 0px;
     font-size: 1.25rem;
 
 }
@@ -682,7 +682,7 @@ footer .footer-icons-container {
 
 .footer-icons-container .icons a img {
     margin-top: 20px;
-    max-width: 40px;
+    max-width: 25px;
     transition: transform 0.2s ease-in-out;
 }
 
