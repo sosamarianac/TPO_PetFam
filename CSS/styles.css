@@ -206,14 +206,14 @@ main .intro {
     margin-top: 10vh;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     
 
 }
 
 main .intro video {
     margin: 100px auto;
-    max-width: 1200px;
+    max-width: 600px;
     
     border-radius: 20px;
     box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
