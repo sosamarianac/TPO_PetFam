@@ -150,7 +150,7 @@ nav {
 
     }
 
- 
+
 
     main .form--adoptame h3 {
         font-size: 1.5rem;
@@ -183,7 +183,7 @@ nav {
         width: 250px;
     }
 
-    
+
 
 
 
@@ -231,22 +231,75 @@ main .intro form {
     margin: 10px auto;
 }
 
-.form--adoptame {
-    display: none;
 
-    margin-bottom: 0;
-    font-weight: normal;
-    margin: 10px auto;
 
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.form--adoptame h3 {
-    font-size: 2rem;
-    color: var(--blanco);
+.popup-content-form {
+    background-color: var(--azul);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
     text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 15px;
 }
+
+.popup-content-form h2 {
+    margin-bottom: 10px;
+}
+
+.popup-content-form h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.popup-content-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.popup-content-form input[type="text"],
+.popup-content-form input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.popup-content-form input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.popup-content-form .close-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ccc;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.back button {
+    justify-self: center;
+}
+
 
 .form--adoptame input[type="text"],
 input[type="email"],
@@ -402,7 +455,7 @@ main .adopt img {
     color: var(--blanco);
     margin-bottom: 10px;
     border-top: #F4F4F4 solid 1.5px;
-    margin: 10px 10px;
+    
     padding: 5px;
     font-size: 1.3rem;
 
@@ -434,7 +487,7 @@ main .donar {
 
 
 
-.nosotros .container .content{
+.nosotros .container .content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     min-width: 350px;
@@ -442,7 +495,7 @@ main .donar {
 
     gap: 40px;
     align-items: center;
-    justify-items:center ;
+    justify-items: center;
 }
 
 .nosotros .card {
@@ -451,7 +504,7 @@ main .donar {
     border-radius: 20px;
     box-shadow: 5px 5px 20px black;
     min-height: 350px;
-    
+
 
 }
 
@@ -539,6 +592,7 @@ main .donar {
     display: flex;
     justify-content: space-around;
 }
+
 .nosotros .titulo {
     text-align: center;
     color: var(--azul);
@@ -557,7 +611,7 @@ main .donar {
 .popup {
     display: none;
     position: fixed;
-    
+
     top: 0;
     left: 0;
     height: 100%;
@@ -578,7 +632,7 @@ main .donar {
     max-height: 80%;
     overflow-y: scroll;
 
-    
+
 }
 
 .popup-header {
@@ -601,10 +655,10 @@ main .donar {
     grid-gap: 20px;
     /* Espacio entre imágenes */
     justify-items: center;
-    
-    
-    
-    
+
+
+
+
 }
 
 .popup-content img {
@@ -613,8 +667,8 @@ main .donar {
     box-shadow: 0 0 5px rgba(19, 22, 20, 0.5);
     max-width: 250px;
     min-width: 100px;
-    
-    
+
+
     /* Ancho de imagen al 100% del contenedor */
     height: auto;
     /* Ajuste automático de altura para mantener la relación de aspecto */
@@ -623,6 +677,35 @@ main .donar {
 
 
 /* fin seccion nuestras mascotas */
+
+
+/*inicio pop-up formulario */
+.face-back .popup-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.face-back .popup-content-form {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.face-back .close-btn {
+    margin-top: 10px;
+}
+
+
+
+
 
 /* inicio Footer */
 footer {

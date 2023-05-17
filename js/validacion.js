@@ -118,3 +118,13 @@ popupCloseBtn4.addEventListener('click', () => {
 });
 
 
+// popup-formulario adoptame
+
+//form-adoptar
+function togglePopup() {
+  var popup = document.getElementById('popup-form');
+  popup.style.display = (popup.style.display === 'none') ? 'flex' : 'none';
+}
+
+
+
