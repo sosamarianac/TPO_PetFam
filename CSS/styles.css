@@ -464,6 +464,7 @@ main .adopt img {
 }
 
 .back ul {
+    margin-top: 20px;
     font-size: 1.2rem;
     padding-left: 20px;
     padding-right: 30px;
