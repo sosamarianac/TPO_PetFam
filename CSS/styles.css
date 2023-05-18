@@ -465,11 +465,11 @@ main .adopt img {
 }
 
 .back ul {
-    margin-top: 30px;
+    margin-top: 25px;
     font-size: 1.2rem;
     padding-left: 20px;
     padding-right: 30px;
-    text-align: justify;
+    text-align: left;
     font-weight: normal;
     letter-spacing: 1px;
 }
