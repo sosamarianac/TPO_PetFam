@@ -345,6 +345,21 @@ button:hover {
     cursor: pointer;
 }
 
+/* inicio seccion tips antes de adoptar */
+main .tips {
+    grid-area: tips;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+/* fin seccion tips antes de adoptar */
+
+
+
+
 /* inicio seccion adopt */
 
 main .adopt {
@@ -446,12 +461,15 @@ main .adopt img {
 .card .back h3 {
     margin-top: 20px;
     font-size: 2.5rem;
+
 }
 
-.back p {
-    font-size: 1.5rem;
-    padding: 5px;
-
+.back ul {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    padding-left: 20px;
+    padding-right: 30px;
+    text-align: left;
     font-weight: normal;
     letter-spacing: 1px;
 }
