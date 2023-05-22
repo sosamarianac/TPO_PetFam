@@ -127,4 +127,33 @@ function togglePopup() {
 }
 
 
+// boton cambio de tips
 
+
+const boton1 = document.getElementById('boton1');
+const boton2 = document.getElementById('boton2');
+const contenido1 = document.getElementById('contenido1');
+const contenido2 = document.getElementById('contenido2');
+const contenido3 = document.getElementById('contenido3');
+const contenido4 = document.getElementById('contenido4');
+const contenido5 = document.getElementById('contenido5');
+const contenido6 = document.getElementById('contenido6');
+
+boton1.addEventListener('click', function() {
+  contenido1.style.display = "block";
+  contenido2.style.display = "block";
+  contenido3.style.display = "block";
+  contenido4.style.display = "none";
+  contenido5.style.display = "none";
+  contenido6.style.display = "none";
+});
+
+
+boton2.addEventListener('click', function() {
+  contenido1.style.display = "none";
+  contenido2.style.display = "none";
+  contenido3.style.display = "none";
+  contenido4.style.display = "block";
+  contenido5.style.display = "block";
+  contenido6.style.display = "block";
+});
