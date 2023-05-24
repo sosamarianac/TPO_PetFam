@@ -411,7 +411,6 @@ main .titulo-tips {
 .tips {
     min-width: 350px;
     max-width: 1150px;
-   height: 100vh;
     margin:20px auto;
     display: grid;
     grid-gap:20px;
@@ -624,8 +623,6 @@ main .donar {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     min-width: 350px;
-
-
     gap: 40px;
     align-items: center;
     justify-items: center;
