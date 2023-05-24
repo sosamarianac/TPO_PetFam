@@ -154,13 +154,15 @@ nav {
     }
     
     .intro {
-        width: 90%;
-        display: flex;
+        width: 80vw;
+        height: 100vh !important;
+        display: flex !important;
+        flex-direction: column;
         justify-items: center;
         /* align-items: center; */
+        gap: 55px;
+        margin-top: 15px;
         
-
-
     }
 
     /* main .video {
@@ -170,18 +172,26 @@ nav {
         
     } */
     .intro video {
-        width: 90%;
-        max-width: 420px;
+        width: 90vw;
+        height: 50vh;
+        max-width: 450px;
+        object-fit: cover;
         display: flex;
         justify-items: center;
 
 
     }
-    .bienvenidos {
-        width: 90%;
-        height: 60%;
+    .bienvenidos img {
+        width: 90vw;
+        height: 50vh;
+        /* object-fit: contain; */
+    
     }
-
+    .bvn-img {
+        max-width: 450px;
+        max-height: 200px;
+        object-fit: contain;
+    }
 
 
     main .form--adoptame h3 {
@@ -223,7 +233,10 @@ nav {
         justify-content: center !important;
         align-items: center;
     }
-
+    .titulo-tips {
+        width: 60%;
+        align-self: center;
+    }
     .space-tips {
         max-width: 280px;
         display: flex !important;
