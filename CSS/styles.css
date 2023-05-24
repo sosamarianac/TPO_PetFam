@@ -285,6 +285,10 @@ main .intro video {
     
 } */
 
+.bienvenidos {
+    max-width: 200px;
+    height: 25%;
+}
 
 /* popup formulario */
 .popup {
@@ -407,7 +411,7 @@ main .titulo-tips {
 .tips {
     min-width: 350px;
     max-width: 1150px;
-   
+   height: 100vh;
     margin:20px auto;
     display: grid;
     grid-gap:20px;
@@ -457,7 +461,8 @@ main .titulo-tips {
 .round-button {
     border-radius: 50%;
     width: 2px;
-    padding: 10px 20px;
+    height: 2px;
+    /* padding: 10px 20px; */
     margin: 0 10px;
   }
 
