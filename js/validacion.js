@@ -66,18 +66,6 @@ slider.addEventListener('mousemove', (e) => {
 
 // seccion pop-up fotos nuestras mascotas
 
-// //perfil-1
-// const miMascotaBtn1 = document.getElementById('mi-mascota-perfil1');
-// const popup1 = document.getElementById('popup-perfil1');
-// const popupCloseBtn1 = document.getElementById('popup-close-perfil1');
-
-// miMascotaBtn1.addEventListener('click', () => {
-//     popup1.style.display = 'block';
-// });
-
-// popupCloseBtn1.addEventListener('click', () => {
-//     popup1.style.display = 'none';
-// });
 // Perfil-2
 const miMascotaBtn2 = document.getElementById('mi-mascota-perfil2');
 const popup2 = document.getElementById('popup-perfil2');

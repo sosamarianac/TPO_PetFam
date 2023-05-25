@@ -51,10 +51,6 @@ body {
         "nosotros nosotros nosotros"
         "footer footer footer";
 }
-section {
-    margin: 20px;
-  }
-  
 
 /* Inicio Estilos de la barra de navegacion */
 header {
@@ -124,7 +120,7 @@ nav {
 
 @media (max-width: 600px) {
     .main {
-        width: 600px;
+        max-width: 600px;
     }
     html {
         background-size: 250%;
@@ -152,6 +148,7 @@ nav {
 
     #toggle-menu:checked ~ .navbar-menu {
         display: flex;
+        justify-content: space-around;
         
     }
     
@@ -190,8 +187,9 @@ nav {
     
     }
     .bvn-img {
-        max-width: 450px;
-        max-height: 200px;
+        margin-top: 30px;
+        min-width: 450px;
+        min-height: 200px;
         object-fit: contain;
     }
 
@@ -217,10 +215,11 @@ nav {
         margin-top: 20px;
         margin-left: 20px;
 
+
     }
 
     main .nosotros .container {
-        width: 250px;
+        width: 98%;
     }
 
     main .nosotros .card {
@@ -245,10 +244,15 @@ nav {
         flex-direction: column;
         justify-content: center;
     }
+    .buttons { 
+        display:none !important;
+    }
     .adopt {
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        margin: 5px;
     }
     .donar {
+        width: 110vw !important;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -264,7 +268,7 @@ nav {
         flex-direction: column;
     }
     .donar-img {
-        min-width: 550px;
+        min-width: 500px;
         height: 100%;
         object-fit: contain;
         display: flex;
@@ -274,6 +278,20 @@ nav {
     .map {
         width: 100%;
         height: 100%;
+    }
+    .intro-1  {
+        width: 110vw !important; 
+        min-height: 73vh;
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    .animate {
+        display: none;
     }
 }   
 
@@ -290,12 +308,21 @@ main {
 
 
 main .intro {
-    margin-top: 10vh;
+    margin-top: 16vh;
     height: 100vh;
-    display: grid;
+    width: 85vw;
+    /* display: grid; */
     grid-template-columns: 1fr 1fr;
     
 
+}
+.intro-1 {
+    width: 90vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    
 }
 
 main .intro video {
@@ -324,8 +351,8 @@ main .intro video {
 } */
 
 .bienvenidos {
-    max-width: 200px;
-    height: 25%;
+    max-width: 900px;
+    height: 90%;
 }
 
 /* popup formulario */
@@ -517,19 +544,19 @@ main .adopt {
     min-height: 100vh;
 }
 
-main .titulo-adop {
+main .titulo {
 
     text-align: center;
     color: var(--azul);
     transition: transform 2s ease-in-out;
-
+    text-align: center;
     margin-top: 40px;
 
     font-size: 3rem;
 
 }
 
-main .titulo-adop:hover {
+main .titulo:hover {
     transform: rotateY(360deg);
 }
 
@@ -646,7 +673,7 @@ main .adopt img {
 /* inicio seccion donar */
 .donar {
     width: 90vw;
-    height: 82vh;
+    height: 90vh;
     padding-top: 20px;
 }
 .donar-cont {
@@ -682,6 +709,7 @@ main .adopt img {
     justify-content: center;
     align-items: center;
     object-fit: cover;
+    animation: animacion1 1.5s ease;
 }
 
 
@@ -693,16 +721,15 @@ main .adopt img {
 
 .nosotros .container .content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     min-width: 350px;
-    
     gap: 40px;
     align-items: center;
     justify-items: center;
 }
 
 .nosotros .card {
-    width: 100%;
+    width: 70%;
     display: block;
     border-radius: 20px;
     box-shadow: 5px 5px 20px black;
@@ -795,14 +822,6 @@ main .adopt img {
     display: flex;
     justify-content: space-around;
 }
-
-.titulo {
-    text-align: center;
-    color: var(--azul);
-    font-weight: bold;
-    font-size: 4rem;
-}
-
 
 
 /* fin seccion nosotros */
