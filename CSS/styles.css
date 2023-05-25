@@ -318,6 +318,8 @@ main .intro video {
 
 .popup-content-form {
     background-color: var(--azul);
+    color: var(--blanco);
+    font-size: medium;
     padding: 20px;
     border-radius: 5px;
     max-width: 400px;
@@ -340,7 +342,7 @@ main .intro video {
 
 .popup-content-form input[type="text"],
 .popup-content-form input[type="email"] {
-    width: 100%;
+    width: 80%;
     padding: 5px;
     margin-top: 5px;
     border-radius: 3px;

@@ -31,8 +31,8 @@ form.addEventListener('submit', function(event) {
   //}
 
   // envía el formulario si todo está correcto
-  alert('El formulario se ha enviado correctamente.');
-  form.submit();
+  // alert('El formulario se ha enviado correctamente.');
+  // form.submit();
 });
 
 //seccion scroll perfil
@@ -157,3 +157,24 @@ boton2.addEventListener('click', function() {
   contenido5.style.display = "block";
   contenido6.style.display = "block";
 });
+
+// Form con Formspree consumo del API
+const $form = document.querySelector("#form")
+
+$form.addEventListener("submit", handleSubmit)
+
+async function handleSubmit(event) {
+  event.preventDefault()
+  const form = new FormData(this)
+  const response = await fetch(this.action, {
+    method: this.method,
+    body: form, 
+    headers: {
+      'Accept': 'aplication/json'
+    }
+  })
+  if (response.ok){
+    this.reset 
+    alert('Gracias por elegir uno de nuestros pequeños para ser parte de tu familia, pronto nos comunicaremos contigo!')
+  }
+}
