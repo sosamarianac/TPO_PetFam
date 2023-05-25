@@ -248,17 +248,33 @@ nav {
     .adopt {
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     }
-
     .donar {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: 10px;
+    }
+    .donar-cont {
+        /* height: 50vh; */
+        gap: 2px;
+        align-items: center;
+        justify-content: center;
         flex-wrap: nowrap;
         flex-direction: column;
     }
     .donar-img {
-        min-width: 90%;
+        min-width: 550px;
+        height: 100%;
+        object-fit: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
+    .map {
+        width: 100%;
+        height: 100%;
+    }
 }   
 
 /* Fin de las media query */
