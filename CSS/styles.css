@@ -619,15 +619,35 @@ main .adopt img {
 }
 
 /* inicio seccion donar */
-main .donar {
-    grid-area: donar;
-    height: 100vh;
+.donar {
+    width: 90vw;
+    height: 90vh;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 
 }
+.donar-img {
+    width: 45%;
+    height: 60%;
+    object-fit: contain;
+    transform: translateX(0);
+    opacity: 0.9;
+    animation: animacion1 1.5s ease;
+    
+}
+@keyframes animacion1 {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
 
+.map {
+    width: 45%;
+    height: 100%;
+    background-color: #0056b3;
+}
 /* fin seccion donar */
 
 /* inicio seccion nosotros */
